@@ -29,8 +29,8 @@ contract Cult is Initializable,UUPSUpgradeable,ERC20Upgradeable, ERC20PermitUpgr
         uint256 initialSupply
         ) public initializer {
         OwnableUpgradeable.__Ownable_init();
-        ERC20Upgradeable.__ERC20_init("Cult DAO", "CULT");
-        ERC20PermitUpgradeable.__ERC20Permit_init("cult");
+        ERC20Upgradeable.__ERC20_init("Meta DAO", "META");
+        ERC20PermitUpgradeable.__ERC20Permit_init("meta");
         ERC20VotesUpgradeable.__ERC20Votes_init_unchained();
         __Pausable_init_unchained();
         ERC20VotesCompUpgradeable.__ERC20VotesComp_init_unchained();

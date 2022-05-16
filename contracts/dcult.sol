@@ -89,9 +89,9 @@ contract Dcult is Initializable, UUPSUpgradeable, ERC20Upgradeable, ERC20PermitU
         ) public initializer {
         require(_adminAddress != address(0), "initialize: Zero address");
         OwnableUpgradeable.__Ownable_init();
-        __ERC20_init_unchained("dCULT", "dCULT");
+        __ERC20_init_unchained("sMETA", "sMETA");
         __Pausable_init_unchained();
-        ERC20PermitUpgradeable.__ERC20Permit_init("dCULT");
+        ERC20PermitUpgradeable.__ERC20Permit_init("sMETA");
         ERC20VotesUpgradeable.__ERC20Votes_init_unchained();
         CULT = _cult;
         adminAddress = _adminAddress;

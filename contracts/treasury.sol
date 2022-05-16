@@ -94,7 +94,7 @@ contract Treasury is
         require(_dao != address(0),"setDAOAddress: Invalid address");
         dao = _dao;
     }
-
+// 155 = 15.5 eth and 25 = 2.5 eth
     function validatePayout() external{
         uint256 balance = IERC20Upgradeable(cult).balanceOf(address(this));
         uint256[] memory getCultAmountOneETH = IUniswapV2Router(router).getAmountsOut(totalETH, path);

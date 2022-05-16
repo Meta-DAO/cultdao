@@ -20,7 +20,7 @@ contract GovernorBravoDelegate is Initializable,UUPSUpgradeable,GovernorBravoDel
     address public treasury;
 
     /// @notice The name of this contract
-    string public constant name = "Cult Governor Bravo";
+    string public constant name = "MetaDAO Governor Bravo";
 
     /// @notice The minimum setable proposal threshold
     uint public constant MIN_PROPOSAL_THRESHOLD = 50000e18; // 50,000 Cult

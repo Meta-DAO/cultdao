@@ -4,8 +4,8 @@ const { BN } = require("@openzeppelin/test-helpers");
 async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deployer address", deployer.address);
-
-  const RouterAddress = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D";
+//updated router adderess with fantom router change this before mainnet deployement
+  const RouterAddress = "0xa6AD18C2aC47803E193F75c3677b14BF19B94883";
   const Token = await ethers.getContractFactory("Cult");
   const governanceToken = await ethers.getContractFactory(
     "GovernorBravoDelegate"
